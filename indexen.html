@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!--[if lt IE 9]>
+    <script src="scripts/html5.js"></script>
+    <![endif]-->
+
+    <title>Lightning DS</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABMLAAATCwAAAAAAAAAAAAC8vLwAvLy8ANfX1wB2dnZraWlpSHV1dUdcXFx1kJCQAH9/fwCampoAlpaWAJmZmQCGhoYAwMDAAMLCwgC+vr4A3NzcANra2gDi4uIA6OjoAFZWVo+AgIA/kpKSUy4uLn2SkpIAo6OjAJSUlACZmZkAhoaGAMDAwADCwsIAvr6+AJ+fnwCjo6MAoqKiAL6+vgC4uLgKMTExtp6enjCEhIRUTU1NjZycnACjo6MAl5eXAIaGhgDAwMAAwsLCAL6+vgBubm4Aenp6AHd3dwBdXV0Ak5OTAK2trTAkJCTdtLS0H3x8fEQ5OTmbn5+fEKysrACDg4MAwMDAAMLCwgC+vr4AeXl5AIyMjACIiIgARUVFACsrKwCkpKQAnZ2dPQAAAOaKiooTZWVlLTs7O4GampoSkpKSAL29vQDBwcEAvb29AH19fQB7e3sAfn5+AFlZWSsJCQmgBgYGeTw8PE49PT21FRUV8FpaWhkTExOuBAQE/3NzczfKysoAwsLCAL6+vgCGhoYDPz8/AGZmZgDS0tIAVFRUhwICAv8oKCiKm5ubAF9fX4AAAAD/RUVFT1NTUx+oqKg54eHhAN3d3QDa2toAj4+PDjw8PEksLCyTWFhYjGxsbDAqKiq0TExMmpSUlAqEhIQbEBAQ7gAAAP9ycnIqsrKyAJ6engCjo6MAoqKiAJSUlACRkZEQaGhoWxMTE9oAAAD/ISEhvFpaWnIODg73QUFBn3R0dFgcHBzVISEhrltbWwteXl4AWlpaAFpaWgCPj48AjY2NAKqqqgCenp4AW1tbPC0tLcRwcHBObW1tOgsLC+izs7MwwMDAACYmJgM5OTkFampqAGBgYABgYGAAkJCQAIqKigCTk5MAf39/AJqamgCWlpYVHh4evEpKSotKSkp1BwcH56CgoCWlpaUAa2trAIKCggCAgIAAgICAAJCQkACKiooAlJSUAH9/fwB7e3sAnJycAJWVlQBRUVGHMTExplZWVnw5OTm84ODgDujo6ADIyMgAzc3NAM3NzQCQkJAAioqKAJSUlACAgIAAfn5+AIuLiwCGhoYAu7u7AEhISGM5OTmwVlZWilxcXIjJyckAwcHBALi4uAC5ubkAkJCQAIqKigCUlJQAgICAAH5+fgCNjY0AgYGBAJaWlgCcnJwAjIyMT0BAQLVHR0eCZWVlXMPDwwCwsLAAra2tAJCQkACKiooAlJSUAICAgAB+fn4AjY2NAIKCggCXl5cAcXFxAPT09ACvr69MGxsbtlJSUmmdnZ0u1NTUAMXFxQCQkJAAioqKAJSUlACAgIAAfn5+AI2NjQCCgoIAlpaWAHd3dwCqqqoA1dXVAHl5eVc+Pj6piYmJPLKyshHPz88A4f8AAPD/AADwfwAA+B8AAPwPAADgBwAAcQcAAAAPAACABwAA8CcAAPgfAAD+DwAA/w8AAP+HAAD/wwAA/+EAAA=="
+          rel="icon" type="image/x-icon"/>
+    <meta name="description" content="Web design page">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--<link href='http://fonts.googleapis.com/css?family=Risque' rel='stylesheet' type='text/css'>-->
+
+    <script src="scripts/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="scripts/myScript.js"></script>
+    <!--<link rel="shortcut icon" type="image/png" href="images/icons/favicon.png">-->
+
+    <script>
+    var bronzeText = "----Request for bronze package----";
+    var silverText = "----Request for silver package----";
+    var goldText = "----Request for gold package----";
+    </script>
+
+</head>
+
+<body>
+<div class="wrapper">
+    <div id="top">
+        <div id="logo">
+            <img id="logoimage" src="images/logo3.png" alt="logo">
+
+            <h1 id="logotitle">Lightning <strong>Design Studio</strong></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a id="homeTab" onclick="showHome();" class="aSelected">Home</a></li>
+                <li><a id="workTab" onclick="showServices();">Packages</a></li>
+                <li><a id="contactTab" onclick="showContact();">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="home">
+
+
+        <h1>We'll turn your ideas into <span>Striking</span> Web Designs!</h1>
+
+        <div class="left">
+
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/brush.png" alt="logo">
+
+                    <h2 onclick="toggleGraphicInfo();">Custom graphics</h2>
+                </div>
+                <p id="graphicInfo">We provide you the service of designing any custom graphic
+                    you may need to generate your unique website.
+                </p>
+
+            </div>
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/tools.png" alt="logo">
+
+                    <h2 onclick="toggleDesignInfo();">Web design</h2>
+                </div>
+                <p id="designInfo">We provide modern, innovative,
+                    affordable solutions both for individuals and companies large or small.</p>
+
+            </div>
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/app.png" alt="logo">
+
+                    <h2 onclick="toggleHostingInfo();">Hosting service
+
+                    </h2>
+                </div>
+                <p id="hostingInfo">Our professional website maintenance and
+                    management packages offer peace-of-mind for clients who require affordable hosting.</p>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/gear.png" alt="logo">
+
+                    <h2 onclick="toggleDevelopmentInfo();">Web development
+                    </h2>
+                </div>
+                <p id="developmentInfo">We strive to create a visual connection, engaging content
+                    and site functionality
+                    that your visitors will remember.</p>
+
+            </div>
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/bulb.png" alt="logo">
+
+                    <h2 onclick="toggleSupportInfo();">Website support
+
+                    </h2>
+                </div>
+                <p id="supportInfo">We offer first class support for all of our customers no
+                    mather how big or small is your business.</p>
+
+            </div>
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/tools.png" alt="logo">
+
+                    <h2 onclick="toggleTechnologiesInfo();">Technologies
+
+                    </h2>
+                </div>
+                <p id="technologiesInfo">
+                    <img class="smallIcon" src="images/icons/html5.png"> <img class="smallIcon"src="images/icons/css.png">
+                    <img class="smallIcon" src="images/icons/js.png">
+                    <img class="smallIcon" src="images/icons/rwd.png"> <img class="mediumIcon" src="images/icons/java3.png">
+                    <img class="largeIcon" src="images/icons/phplogo.png"> <img class="largeIcon" src="images/icons/PlayFramework.png">
+                    <img class="mediumIcon" src="images/icons/symfony_black_03.png">.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="work" style="display: none;">
+        <div class="pricingBox boxshadowed bronzeBox" onclick="clickBronzeBox();">
+            <h3>Bronze Package</h3>
+
+            <div class="itemText">
+                <p> 3 sections website </p>
+
+                <p> Custom colors </p>
+
+                <p> Up to 15 pictures uploads</p>
+
+                <p> Free 1 month hosting </p>
+
+                <strong>Price: $2000</strong>
+            </div>
+        </div>
+
+        <div class="pricingBox boxshadowed silverBox" onclick="clickSilverBox();">
+            <h3>Silver Package</h3>
+
+            <div class="itemText">
+                <p> 5 sections website </p>
+
+                <p> Custom colors & graphics </p>
+
+                <p> Up to 35 pictures uploads </p>
+
+                <p> Free 1 month hosting </p>
+
+                <strong>Price: $2500</strong>
+            </div>
+        </div>
+
+        <div class="pricingBox boxshadowed goldBox" onclick="clickGoldBox();">
+            <h3>Gold Package</h3><!--Title-->
+            <div class="itemText">
+                <p> Custom web app </p>
+
+                <p> Custom colors & graphics </p>
+
+                <p> Responsive design </p>
+
+                <p> Parallax design </p>
+
+                <strong>Ask for price!</strong>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact" class="contactDiv" style="display: none;">
+        <div class="left">
+            <h4>About us</h4>
+
+            <p> Lightning Design Studio is a full service agency with in-house website designers and
+                developers together hosting solutions to suit your website development and budget.
+            </p>
+
+            <p>
+                We assure a <strong>Minimalist</strong> , <strong>Intuitive</strong> and <strong>Innovative</strong>
+                design.
+            </p>
+
+            <p class="importantP">
+                We are a solution no matter how small or big your business is.
+            </p>
+        </div>
+        <div class="right">
+            <p class="importantP">
+            Email Us To lightning.web.design@gmail.com!</p>
+
+            <!--<div id="formwrap">-->
+                <!--<form method="post" id="submitform" action="submitemail.php">-->
+                    <!--<input placeholder="Name" type="text" class="formstyle" title="Name" name="name"/>-->
+                    <!--<input placeholder="Email" type="text" class="formstyle" title="Email" name="email"/>-->
+                    <!--<textarea id="messageArea"  name="message" title="Message"></textarea>-->
+                    <!--<input class="formstyletwo" type="submit" value="Send">-->
+                <!--</form>-->
+            <!--</div>-->
+            <!--<div id="error"></div>-->
+        </div>
+    </div>
+    <div id="languages">
+        <a href="index.php">
+        <img  class="flag" src="images/icons/es.png">
+        </a>
+        <img class="flag" src="images/icons/en.png">
+    </div>
+
+</div>
+
+</body>
+</html>

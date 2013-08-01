@@ -1,0 +1,38 @@
+<!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyDOcPLOkyiUPA-tMLSkhuPtCTJxaL5atTg" type="text/javascript"></script>-->
+
+    <!--
+   <script type="text/javascript">
+       function initialize() {
+           if (GBrowserIsCompatible()) {
+               var map = new GMap2(document.getElementById("map_canvas"));
+               center = new GLatLng(-34.6220523, -58.3939089);
+               map.setCenter(center, 11);
+               center = new GLatLng(-34.6220523, -58.3939089);
+               var marker = new GMarker(center, {draggable:false});
+               GEvent.addListener(marker, "click", function () {
+                   map.closeInfoWindow();
+               })
+               GEvent.addListener(marker, "click", function () {
+                   marker.openInfoWindowHtml("Oficina San Cristobal");
+               });
+               map.addOverlay(marker);
+
+               var center2 = new GLatLng(-34.55741101093769, -58.48897784999997);
+               var marker2 = new GMarker(center2, {draggable:false});
+               GEvent.addListener(marker2, "click", function () {
+                   map.closeInfoWindow();
+               });
+               GEvent.addListener(marker2, "click", function () {
+                   marker2.openInfoWindowHtml("Oficina Saavedra");
+               });
+               map.addOverlay(marker2);
+               var baseIcon = new GIcon(G_DEFAULT_ICON);
+               baseIcon.shadow = "http://www.google.com/mapfiles/shadow50.png";
+
+               map.setUIToDefault();
+           }
+       }
+   </script>
+    -->
+
+    <!--<body onload="initialize();" onunload="GUnload();">-->

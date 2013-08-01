@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!--[if lt IE 9]>
+    <script src="scripts/html5.js"></script>
+    <![endif]-->
+
+    <title>Lightning DS</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABMLAAATCwAAAAAAAAAAAAC8vLwAvLy8ANfX1wB2dnZraWlpSHV1dUdcXFx1kJCQAH9/fwCampoAlpaWAJmZmQCGhoYAwMDAAMLCwgC+vr4A3NzcANra2gDi4uIA6OjoAFZWVo+AgIA/kpKSUy4uLn2SkpIAo6OjAJSUlACZmZkAhoaGAMDAwADCwsIAvr6+AJ+fnwCjo6MAoqKiAL6+vgC4uLgKMTExtp6enjCEhIRUTU1NjZycnACjo6MAl5eXAIaGhgDAwMAAwsLCAL6+vgBubm4Aenp6AHd3dwBdXV0Ak5OTAK2trTAkJCTdtLS0H3x8fEQ5OTmbn5+fEKysrACDg4MAwMDAAMLCwgC+vr4AeXl5AIyMjACIiIgARUVFACsrKwCkpKQAnZ2dPQAAAOaKiooTZWVlLTs7O4GampoSkpKSAL29vQDBwcEAvb29AH19fQB7e3sAfn5+AFlZWSsJCQmgBgYGeTw8PE49PT21FRUV8FpaWhkTExOuBAQE/3NzczfKysoAwsLCAL6+vgCGhoYDPz8/AGZmZgDS0tIAVFRUhwICAv8oKCiKm5ubAF9fX4AAAAD/RUVFT1NTUx+oqKg54eHhAN3d3QDa2toAj4+PDjw8PEksLCyTWFhYjGxsbDAqKiq0TExMmpSUlAqEhIQbEBAQ7gAAAP9ycnIqsrKyAJ6engCjo6MAoqKiAJSUlACRkZEQaGhoWxMTE9oAAAD/ISEhvFpaWnIODg73QUFBn3R0dFgcHBzVISEhrltbWwteXl4AWlpaAFpaWgCPj48AjY2NAKqqqgCenp4AW1tbPC0tLcRwcHBObW1tOgsLC+izs7MwwMDAACYmJgM5OTkFampqAGBgYABgYGAAkJCQAIqKigCTk5MAf39/AJqamgCWlpYVHh4evEpKSotKSkp1BwcH56CgoCWlpaUAa2trAIKCggCAgIAAgICAAJCQkACKiooAlJSUAH9/fwB7e3sAnJycAJWVlQBRUVGHMTExplZWVnw5OTm84ODgDujo6ADIyMgAzc3NAM3NzQCQkJAAioqKAJSUlACAgIAAfn5+AIuLiwCGhoYAu7u7AEhISGM5OTmwVlZWilxcXIjJyckAwcHBALi4uAC5ubkAkJCQAIqKigCUlJQAgICAAH5+fgCNjY0AgYGBAJaWlgCcnJwAjIyMT0BAQLVHR0eCZWVlXMPDwwCwsLAAra2tAJCQkACKiooAlJSUAICAgAB+fn4AjY2NAIKCggCXl5cAcXFxAPT09ACvr69MGxsbtlJSUmmdnZ0u1NTUAMXFxQCQkJAAioqKAJSUlACAgIAAfn5+AI2NjQCCgoIAlpaWAHd3dwCqqqoA1dXVAHl5eVc+Pj6piYmJPLKyshHPz88A4f8AAPD/AADwfwAA+B8AAPwPAADgBwAAcQcAAAAPAACABwAA8CcAAPgfAAD+DwAA/w8AAP+HAAD/wwAA/+EAAA=="
+          rel="icon" type="image/x-icon"/>
+    <meta name="description" content="Web design page">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--<link href='http://fonts.googleapis.com/css?family=Risque' rel='stylesheet' type='text/css'>-->
+
+    <script src="scripts/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="scripts/myScript.js"></script>
+    <!--<link rel="shortcut icon" type="image/png" href="images/icons/favicon.png">-->
+    <script>
+        var bronzeText = "----Pedido de paquete bronce----";
+        var silverText = "----Pedido de paquete plateado----";
+        var goldText = "----Pedido de paquete dorado----";
+    </script>
+
+</head>
+
+<body>
+<div class="wrapper">
+    <div id="top">
+        <div id="logo">
+            <img id="logoimage" src="images/logo3.png" alt="logo">
+
+            <h1 id="logotitle">Lightning <strong>Design Studio</strong></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a id="homeTab" onclick="showHome();" class="aSelected">Inicio</a></li>
+                <li><a id="workTab" onclick="showServices();">Paquetes</a></li>
+                <li><a id="contactTab" onclick="showContact();">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="home">
+
+
+        <h1>Transformamos tus ideas en <span>Brillantes</span> Diseños Web!</h1>
+
+        <div class="left">
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/brush.png" alt="logo">
+
+                    <h2 onclick="toggleGraphicInfo();">Gráficos personalizados</h2>
+                </div>
+                <p id="graphicInfo">Le proveemos con el servicio de diseñar cualquier gráfico personalizado que necesite
+                    para que su sitio web sea único.
+                </p>
+
+            </div>
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/tools.png" alt="logo">
+
+                    <h2 onclick="toggleDesignInfo();">Diseño web</h2>
+                </div>
+                <p id="designInfo">Proveemos soluciones modernas, innovadoras y accesibles para individuos y empresas
+                    grandes o pequeñas.</p>
+
+            </div>
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/app.png" alt="logo">
+
+                    <h2 onclick="toggleHostingInfo();">Servicio de hosting</h2>
+                </div>
+                <p id="hostingInfo">Nuestros paquetes de manejo y mantenimiento de sitios web ofrecen un alivio a
+                    clientes que requieren hosting a precios accesibles.</p>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/gear.png" alt="logo">
+
+                    <h2 onclick="toggleDevelopmentInfo();">Desarrollo web</h2>
+                </div>
+                <p id="developmentInfo">Nos esforzamos para crear una conexión visual, un contenido cautivador y un
+                    sitio funcional que sus visitantes recordarán.</p>
+
+            </div>
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/bulb.png" alt="logo">
+
+                    <h2 onclick="toggleSupportInfo();">Soporte</h2>
+                </div>
+                <p id="supportInfo">Ofrecemos un soporte de primera clase para todos nuestros clientes, sin importar el
+                    tamaño de su negocio.</p>
+
+            </div>
+            <div class="paragraph">
+                <div class="headText">
+                    <img class="textIcon" src="images/icons/tools.png" alt="logo">
+
+                    <h2 onclick="toggleTechnologiesInfo();">Tecnologías
+
+                    </h2>
+                </div>
+                <p id="technologiesInfo">
+                    <img class="smallIcon" src="images/icons/html5.png"> <img class="smallIcon"
+                    <img class="smallIcon" src="images/icons/js.png">
+                    <img class="smallIcon" src="images/icons/rwd.png"> <img class="mediumIcon"
+                    <img class="largeIcon" src="images/icons/phplogo.png"> <img class="largeIcon"
+                    <img class="mediumIcon" src="images/icons/symfony_black_03.png">.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="work" style="display: none;">
+        <div class="pricingBox boxshadowed bronzeBox" onclick="clickBronzeBox();">
+            <h3>Paquete Bronce</h3>
+
+            <div class="itemText">
+                <p> 3 secciones </p>
+
+                <p> Colores personalizados </p>
+
+                <p> Hasta 15 imágenes subidas</p>
+
+                <p> 1 mes gratis de hosting </p>
+
+                <strong>Precio: $2000</strong>
+            </div>
+        </div>
+
+        <div class="pricingBox boxshadowed silverBox" onclick="clickSilverBox();">
+            <h3>Paquete Plateado</h3>
+
+            <div class="itemText">
+                <p> 5 secciones </p>
+
+                <p> Colores y gráficos personalizados </p>
+
+                <p> Hasta 35 imágenes subidas </p>
+
+                <p> 1 mes gratis de hosting </p>
+
+                <strong>Precio: $2500</strong>
+            </div>
+        </div>
+
+        <div class="pricingBox boxshadowed goldBox" onclick="clickGoldBox();">
+            <h3>Paquete Dorado</h3><!--Title-->
+            <div class="itemText">
+                <p> Web app personalizada </p>
+
+                <p> Colores y gráficos personalizados </p>
+
+                <p> Diseño Responsive </p>
+
+                <p> Diseño Parallax </p>
+
+                <strong>Preguntar precio</strong>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact" class="contactDiv" style="display: none;">
+        <div class="left">
+            <h4>Sobre nosotros</h4>
+
+            <p> Lightning Design Studio es un servicio completo con diseñadores y desarrolladores web internos junto con
+                soluciones de hosting que cumplan con lo que está buscando y con su presupuesto.</p>
+
+            <p>
+                Aseguramos un diseño <strong>Minimalista</strong> , <strong>Intuitivo</strong> e
+                <strong>Innovador</strong>.
+            </p>
+
+            <p class="importantP">
+                Somos la solución, no importa qué tan grande o pequeño sea su negocio.
+            </p>
+        </div>
+        <div class="right">
+            <p class="importantP">
+                ¡Contáctenos a nuestro mail: lightning.web.design@gmail.com!
+            </p>
+            <div id="formwrap">
+                <!--<form method="post" id="submitform" action="submitemail.php">-->
+                    <!--<input placeholder="Nombre" type="text" class="formstyle" title="Name" name="name"/>-->
+                    <!--<input placeholder="Email" type="text" class="formstyle" title="Email" name="email"/>-->
+                    <!--<textarea id="messageArea" name="message" title="Message"></textarea>-->
+                    <!--<input class="formstyletwo" type="submit" value="Send">-->
+                <!--</form>-->
+                <form id="ContactForm" action="enviar.php" method="post">
+                    <div>
+                        <div class="wrapper">
+                            <span>Nombre Completo:</span>
+                            <input name="nombre" class="input" id="nombre" type="text" placeholder="Nombre Completo"
+                                   required="required"
+                                   autofocus="autofocus" maxlength="20"/>
+                        </div>
+                        <div class="wrapper">
+                            <span>E-mail:</span>
+                            <input name="email" class="input" id="email" type="email" placeholder="ejemplo@ejemlo.com"
+                                   required="required"/>
+                        </div>
+                        <div class="textarea_box">
+                            <span>Mensaje:</span>
+                            <textarea name="mensaje" cols="1" rows="1" placeholder="Ingrese su mensaje:"
+                                      required="required"></textarea>
+                            <!--<button name="btsend" id="btsend" type="submit" class="button1">Enviar</button>-->
+                        </div>
+                        <div class="wrapper">
+                            <br>
+                            <button name="btsend" id="btsend" type="submit" class="button1 right">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="error"></div>
+        </div>
+    </div>
+
+    <div id="languages">
+        <img class="flag" src="images/icons/es.png">
+        <a href="indexen.html">
+            <img class="flag" src="images/icons/en.png">
+        </a>
+    </div>
+
+</div>
+
+
+</body>
+</html>
